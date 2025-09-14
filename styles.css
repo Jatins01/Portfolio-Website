@@ -1,0 +1,96 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9f9;
+  color: #1b1b1b;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: linear-gradient(to right, #007acc, #005fa3);
+  color: #fff;
+  padding: 36px 12px;
+  text-align: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Header text */
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 6px;
+}
+
+.sub {
+  margin-bottom: 12px;
+  opacity: 0.95;
+}
+
+/* Nav */
+.nav {
+  margin-top: 12px;
+}
+
+.nav a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* Sections */
+.section {
+  padding: 36px 12px;
+  background: #ffffff;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+/* Projects grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.project-card {
+  padding: 18px;
+  border-radius: 8px;
+  background: linear-gradient(180deg, #ffffff, #f2f7ff);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+.project-card h3 {
+  margin-bottom: 8px;
+  font-size: 1.05rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin: 18px auto;
+  color: #444;
+}
+
+/* Responsive tweaks */
+@media (max-width: 640px) {
+  header h1 { font-size: 1.8rem; }
+  .nav a { display: inline-block; margin: 6px 8px; }
+}
